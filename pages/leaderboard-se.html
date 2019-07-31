@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title -->
+	<title>C3 - Leaderboard</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="../img/core-img/favicon.ico" />
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+</head>
+
+<body style="background-color: #222627">
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="lds-ellipsis">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Top Header Area -->
+
+		<!-- Navbar Area -->
+		<div class="vizew-main-menu" id="sticker">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="vizewNav">
+						<!-- Nav brand -->
+						<a href="../index.html" class="nav-brand"><img src="../img/core-img/logo.png" alt="" /></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<div class="classy-menu">
+							<!-- Close Button -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li><a href="../index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li>
+										<a href="#">Subject</a>
+										<ul class="dropdown">
+											<li>
+												<a href="django/blog/blog-grid.html">- Django</a>
+											</li>
+											<li>
+												<a href="mongodb/blog/blog-grid.html">- MongoDB</a>
+											</li>
+											<li>
+												<a href="hadoop/blog/blog-grid.html">- Hadoop</a>
+											</li>
+											<li>
+												<a href="testing/blog/blog-grid.html">- Testing</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="leaderboard-se.html">Leaderboard</a>
+										<ul class="dropdown">
+											<li>
+												<a href="leaderboard-se.html">- SE</a>
+											</li>
+											<li>
+												<a href="leaderboard-te.html">- TE</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="team.html">Team</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ##### Header Area End ##### -->
+
+	<!-- ##### Breadcrumb Area Start ##### -->
+	<div class="vizew-breadcrumb"></div>
+	<!-- ##### Breadcrumb Area End ##### -->
+
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 style="color: white">Week 0</h2>
+			</div>
+			<div class="container">
+
+				<table class="table table-dark table-striped" style="text-align: center">
+
+					<tr style="background-color: brown">
+						<td>Rank</td>
+						<td>WinnerName</td>
+						<td>Q1</td>
+						<td>Q2</td>
+						<td>Q3</td>
+						<td>Total</td>
+					</tr>
+
+
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Jayesh Deorukhkar</td>
+							<td>15</td>
+							<td>0</td>
+							<td>0</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Abhishek Dhule</td>
+							<td>15</td>
+							<td>0</td>
+							<td>0</td>
+							<td>15</td>
+
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Vikas Dabhi</td>
+							<td>15</td>
+							<td>0</td>
+							<td>0</td>
+							<td>15</td>
+						</tr>
+					</tbody>
+				</table>
+				<p style="display: table">Note: <i>In case of Tie, the ranking is assigned by time taken to submit the
+						solution.</i></p>
+
+				<div class="container-fluid">
+					<h3 style="color: white">Challenges:</h3>
+					<div class="panel-group">
+
+						<div class="panel panel-default">
+							<div style="display: flex; justify-content: space-between">
+								<div class="panel-heading">1.Plus-Minus</div>
+								<p style="margin-right: 10px">Easy | Max Score: 15</p>
+							</div>
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python1">Python</a></li>
+									<li><a data-toggle="tab" href="#java1">Java</a></li>
+									<li><a data-toggle="tab" href="#c1">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus1">C++</a></li>
+								</ul>
+								<div class="tab-content" style="margin-top: 20px;text-align: start">
+									<div id="python1" class="tab-pane fade in active">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">import</span> math
+<span style="color:#200080; font-weight:bold; ">import</span> os
+<span style="color:#200080; font-weight:bold; ">import</span> random
+<span style="color:#200080; font-weight:bold; ">import</span> re
+<span style="color:#200080; font-weight:bold; ">import</span> sys
+<span style="color:#200080; font-weight:bold; ">def</span> plusMinus<span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">:</span>
+    pos<span style="color:#308080; ">,</span>neg<span style="color:#308080; ">,</span>neu<span style="color:#308080; ">=</span><span style="color:#008c00; ">0</span>
+    <span style="color:#200080; font-weight:bold; ">for</span> i <span style="color:#200080; font-weight:bold; ">in</span> <span style="color:#400000; ">range</span><span style="color:#308080; ">(</span><span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#308080; ">:</span>
+        <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#44aadd; ">&gt;</span><span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span><span style="color:#308080; ">:</span>
+            pos<span style="color:#44aadd; ">+</span><span style="color:#308080; ">=</span><span style="color:#008c00; ">1</span>
+        <span style="color:#200080; font-weight:bold; ">elif</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#44aadd; ">==</span><span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span><span style="color:#308080; ">:</span>
+            neu<span style="color:#44aadd; ">+</span><span style="color:#308080; ">=</span><span style="color:#008c00; ">1</span>
+        <span style="color:#200080; font-weight:bold; ">else</span><span style="color:#308080; ">:</span>
+            neg<span style="color:#44aadd; ">+</span><span style="color:#308080; ">=</span><span style="color:#008c00; ">1</span>
+    <span style="color:#200080; font-weight:bold; ">print</span><span style="color:#308080; ">(</span>pos<span style="color:#44aadd; ">/</span><span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    <span style="color:#200080; font-weight:bold; ">print</span><span style="color:#308080; ">(</span>neg<span style="color:#44aadd; ">/</span><span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    <span style="color:#200080; font-weight:bold; ">print</span><span style="color:#308080; ">(</span>neu<span style="color:#44aadd; ">/</span><span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+
+<span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#074726; ">__name__</span> <span style="color:#44aadd; ">==</span> <span style="color:#1060b6; ">'__main__'</span><span style="color:#308080; ">:</span>
+    n <span style="color:#308080; ">=</span> <span style="color:#400000; ">int</span><span style="color:#308080; ">(</span><span style="color:#400000; ">input</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    arr <span style="color:#308080; ">=</span> <span style="color:#400000; ">list</span><span style="color:#308080; ">(</span><span style="color:#400000; ">map</span><span style="color:#308080; ">(</span><span style="color:#400000; ">int</span><span style="color:#308080; ">,</span> <span style="color:#400000; ">input</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">.</span>rstrip<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">.</span>split<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    plusMinus<span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span>
+</pre>
+
+
+											</code>
+											<h4>Credits:C3</h4>
+									</div>
+									<div id="java1" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">import</span><span style="color:#004a43; "> java</span><span style="color:#308080; ">.</span><span style="color:#004a43; ">util</span><span style="color:#308080; ">.</span><span style="color:#004a43; ">Scanner</span><span style="color:#406080; ">;</span>
+
+<span style="color:#200080; font-weight:bold; ">public</span> <span style="color:#200080; font-weight:bold; ">class</span> Solution <span style="color:#406080; ">{</span>
+  <span style="color:#200080; font-weight:bold; ">public</span> <span style="color:#200080; font-weight:bold; ">static</span> <span style="color:#7779bb; ">void</span> main<span style="color:#308080; ">(</span><span style="color:#6679aa; font-weight:bold; ">String</span><span style="color:#308080; ">[</span><span style="color:#308080; ">]</span> args<span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+      <span style="color:#6679aa; font-weight:bold; ">Scanner</span> in <span style="color:#308080; ">=</span> <span style="color:#200080; font-weight:bold; ">new</span> <span style="color:#6679aa; font-weight:bold; ">Scanner</span><span style="color:#308080; ">(</span><span style="color:#6679aa; font-weight:bold; ">System</span><span style="color:#308080; ">.</span>in<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+      <span style="color:#7779bb; ">int</span> N <span style="color:#308080; ">=</span> in<span style="color:#308080; ">.</span>nextInt<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+      <span style="color:#7779bb; ">int</span> positiveNum <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+      <span style="color:#7779bb; ">int</span> negativeNum <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+      <span style="color:#7779bb; ">int</span> zeroNum <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+      <span style="color:#200080; font-weight:bold; ">for</span> <span style="color:#308080; ">(</span><span style="color:#7779bb; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> N<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+	  <span style="color:#7779bb; ">int</span> number <span style="color:#308080; ">=</span> in<span style="color:#308080; ">.</span>nextInt<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	  <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>number <span style="color:#308080; ">&gt;</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+		positiveNum<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+	  <span style="color:#406080; ">}</span> <span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>number <span style="color:#308080; ">&lt;</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+		negativeNum<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+		<span style="color:#406080; ">}</span> <span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#406080; ">{</span>
+		       zeroNum<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+		     <span style="color:#406080; ">}</span>
+		<span style="color:#406080; ">}</span>
+	<span style="color:#6679aa; font-weight:bold; ">System</span><span style="color:#308080; ">.</span>out<span style="color:#308080; ">.</span>printf<span style="color:#308080; ">(</span><span style="color:#1060b6; ">"%.3f</span><span style="color:#0f69ff; ">\n</span><span style="color:#1060b6; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">(</span><span style="color:#7779bb; ">double</span><span style="color:#308080; ">)</span> positiveNum <span style="color:#308080; ">/</span> N<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#6679aa; font-weight:bold; ">System</span><span style="color:#308080; ">.</span>out<span style="color:#308080; ">.</span>printf<span style="color:#308080; ">(</span><span style="color:#1060b6; ">"%.3f</span><span style="color:#0f69ff; ">\n</span><span style="color:#1060b6; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">(</span><span style="color:#7779bb; ">double</span><span style="color:#308080; ">)</span> negativeNum <span style="color:#308080; ">/</span> N<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#6679aa; font-weight:bold; ">System</span><span style="color:#308080; ">.</span>out<span style="color:#308080; ">.</span>printf<span style="color:#308080; ">(</span><span style="color:#1060b6; ">"%.3f</span><span style="color:#0f69ff; ">\n</span><span style="color:#1060b6; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">(</span><span style="color:#7779bb; ">double</span><span style="color:#308080; ">)</span> zeroNum <span style="color:#308080; ">/</span> N<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	in<span style="color:#308080; ">.</span>close<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+      <span style="color:#406080; ">}</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+							    </code>
+								<h4>Credits:C3</h4>
+									</div>
+									<div id="c1" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#004a43; ">#</span><span style="color:#004a43; ">include</span><span style="color:#800000; ">&lt;</span><span style="color:#40015a; ">stdio.h</span><span style="color:#800000; ">&gt;</span>
+<span style="color:#200080; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span>
+<span style="color:#406080; ">{</span>
+  <span style="color:#200080; font-weight:bold; ">int</span> n<span style="color:#308080; ">,</span> i<span style="color:#308080; ">,</span> positives <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">,</span> negatives <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">,</span> zeros <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+  <span style="color:#200080; font-weight:bold; ">float</span> answernegative <span style="color:#308080; ">=</span> <span style="color:#008000; ">0.0</span><span style="color:#308080; ">,</span> answerPositive <span style="color:#308080; ">=</span> <span style="color:#008000; ">0.0</span><span style="color:#308080; ">,</span> answerZero <span style="color:#308080; ">=</span> <span style="color:#008000; ">0.0</span><span style="color:#406080; ">;</span>
+  <span style="color:#200080; font-weight:bold; ">int</span> number<span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">&amp;</span>n<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">for</span><span style="color:#308080; ">(</span>i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span>
+    <span style="color:#406080; ">{</span>
+      <span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">&amp;</span>number<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+      <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>number <span style="color:#308080; ">&gt;</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span>
+           positives <span style="color:#308080; ">+</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#406080; ">;</span>
+       <span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>number <span style="color:#308080; ">&lt;</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span>
+            negatives <span style="color:#308080; ">+</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#406080; ">;</span>
+       <span style="color:#200080; font-weight:bold; ">else</span>
+           zeros <span style="color:#308080; ">+</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+  answerPositive <span style="color:#308080; ">=</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">float</span><span style="color:#308080; ">)</span>positives<span style="color:#308080; ">/</span>n<span style="color:#406080; ">;</span>
+  answernegative <span style="color:#308080; ">=</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">float</span><span style="color:#308080; ">)</span>negatives<span style="color:#308080; ">/</span>n<span style="color:#406080; ">;</span>
+  answerZero <span style="color:#308080; ">=</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">float</span><span style="color:#308080; ">)</span>zeros<span style="color:#308080; ">/</span>n<span style="color:#406080; ">;</span>
+  <span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%.6f</span><span style="color:#0f69ff; ">\n</span><span style="color:#007997; ">%.6f</span><span style="color:#0f69ff; ">\n</span><span style="color:#007997; ">%.6f</span><span style="color:#0f69ff; ">\n</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> answerPositive<span style="color:#308080; ">,</span> answernegative<span style="color:#308080; ">,</span> answerZero<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+  <span style="color:#200080; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+											</code>
+											<h4>Credits:C3</h4>
+									</div>
+									<div id="cplusplus1" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000000;background:#ffffff;"><span style="color:#000084; ">#</span><span style="color:#000084; ">include </span><span style="color:#0000ff; ">&lt;</span><span style="color:#3f3fbf; ">bits/stdc++.h</span><span style="color:#0000ff; ">&gt;</span>
+<span style="color:#000084; font-weight:bold; ">using</span> <span style="color:#000084; font-weight:bold; ">namespace</span> std;
+<span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">string</span>&gt; split_string(<span style="color:#000084; font-weight:bold; ">string</span>);
+<span style="color:#000084; font-weight:bold; ">void</span> plusMinus(<span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">int</span>&gt; arr,<span style="color:#000084; font-weight:bold; ">int</span> n)
+{
+    <span style="color:#000084; font-weight:bold; ">float</span> count0=0;
+    <span style="color:#000084; font-weight:bold; ">float</span> countp=0;
+    <span style="color:#000084; font-weight:bold; ">float</span> countn=0;
+    <span style="color:#000084; font-weight:bold; ">for</span> (<span style="color:#000084; font-weight:bold; ">int</span> i = 0; i &lt; n; i++)
+    {
+     <span style="color:#000084; font-weight:bold; ">if</span>(arr[i]==0)
+     {
+      count0++;
+     }
+     <span style="color:#000084; font-weight:bold; ">else</span> <span style="color:#000084; font-weight:bold; ">if</span>(arr[i]&lt;0)
+     {
+      countn++;
+     }
+        <span style="color:#000084; font-weight:bold; ">else</span> <span style="color:#000084; font-weight:bold; ">if</span>(arr[i]&gt;0)
+        {
+            countp++;
+        }
+ }
+    <span style="color:#000084; font-weight:bold; ">cout</span>&lt;&lt;countp/n&lt;&lt;<span style="color:#000084; font-weight:bold; ">endl</span>;
+    <span style="color:#000084; font-weight:bold; ">cout</span>&lt;&lt;countn/n&lt;&lt;<span style="color:#000084; font-weight:bold; ">endl</span>;
+    <span style="color:#000084; font-weight:bold; ">cout</span>&lt;&lt;count0/n&lt;&lt;<span style="color:#000084; font-weight:bold; ">endl</span>;;
+}
+<span style="color:#000084; font-weight:bold; ">int</span> <span style="color:#000084; font-weight:bold; ">main</span>()
+{
+    <span style="color:#000084; font-weight:bold; ">int</span> n;
+    <span style="color:#000084; font-weight:bold; ">cin</span> &gt;&gt; n;
+    <span style="color:#000084; font-weight:bold; ">cin</span>.ignore(numeric_limits&lt;streamsize&gt;::<span style="color:#000084; font-weight:bold; ">max</span>(), <span style="color:#0000ff; ">'\n'</span>);
+    <span style="color:#000084; font-weight:bold; ">string</span> arr_temp_temp;
+    getline(<span style="color:#000084; font-weight:bold; ">cin</span>, arr_temp_temp);
+    <span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">string</span>&gt; arr_temp = split_string(arr_temp_temp);
+    <span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">int</span>&gt; arr(n);
+
+    <span style="color:#000084; font-weight:bold; ">for</span> (<span style="color:#000084; font-weight:bold; ">int</span> i = 0; i &lt; n; i++) {
+        <span style="color:#000084; font-weight:bold; ">int</span> arr_item = stoi(arr_temp[i]);
+        arr[i] = arr_item;
+    }
+    plusMinus(arr,n);
+    <span style="color:#000084; font-weight:bold; ">return</span> 0;
+}
+<span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">string</span>&gt; split_string(<span style="color:#000084; font-weight:bold; ">string</span> input_string) {
+    <span style="color:#000084; font-weight:bold; ">string</span>::<span style="color:#000084; font-weight:bold; ">iterator</span> new_end = <span style="color:#000084; font-weight:bold; ">unique</span>(input_string.begin(), input_string.end(),
+     [] (<span style="color:#000084; font-weight:bold; ">const</span> <span style="color:#000084; font-weight:bold; ">char</span> &amp;x, <span style="color:#000084; font-weight:bold; ">const</span> <span style="color:#000084; font-weight:bold; ">char</span> &amp;y) <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">{</span>
+        <span style="color:#000084; font-weight:bold; ">return</span> x == y <span style="color:#000084; font-weight:bold; ">and</span> x == <span style="color:#0000ff; ">' '</span>;
+    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>);
+    input_string.erase(new_end, input_string.end());
+    <span style="color:#000084; font-weight:bold; ">while</span> (input_string[input_string.length() - 1] == <span style="color:#0000ff; ">' '</span>) {
+        input_string.pop_back();
+    }
+    <span style="color:#000084; font-weight:bold; ">vector</span>&lt;<span style="color:#000084; font-weight:bold; ">string</span>&gt; splits;
+    <span style="color:#000084; font-weight:bold; ">char</span> delimiter = <span style="color:#0000ff; ">' '</span>;
+    <span style="color:#000084; font-weight:bold; ">size_t</span> i = 0;
+    <span style="color:#000084; font-weight:bold; ">size_t</span> pos = input_string.<span style="color:#000084; font-weight:bold; ">find</span>(delimiter);
+
+    <span style="color:#000084; font-weight:bold; ">while</span> (pos != <span style="color:#000084; font-weight:bold; ">string</span>::<span style="color:#000084; font-weight:bold; ">npos</span>) {
+        splits.push_back(input_string.substr(i, pos - i));
+        i = pos + 1;
+        pos = input_string.<span style="color:#000084; font-weight:bold; ">find</span>(delimiter, i);
+    }
+
+    splits.push_back(input_string.substr(i, <span style="color:#000084; font-weight:bold; ">min</span>(pos, input_string.length()) - i + 1));
+
+    <span style="color:#000084; font-weight:bold; ">return</span> splits;
+}
+</pre>
+
+
+											</code>
+											<h4>Credits:Jayesh Deorukhkar</h4>
+										<a href="https://www.hackerrank.com/jddeorukhkar?h_r=internal-search&hr_r=1">Handle</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div style="display: flex; justify-content: space-between">
+							<div class="panel-heading">2.Cut the Sticks</div>
+							<p style="margin-right: 10px">Medium | Max Score: 25</p>
+						</div>
+						<div class="panel-body">
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python2">Python</a></li>
+									<li><a data-toggle="tab" href="#java2">Java</a></li>
+									<li><a data-toggle="tab" href="#c2">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus2">C++</a></li>
+								</ul>
+								<div class="tab-content" style="margin-top: 20px; text-align: start">
+									<div id="python2" class="tab-pane fade in active">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">def</span> computeSticks<span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span><span style="color:#308080; ">:</span>
+    arr<span style="color:#308080; ">.</span>sort<span style="color:#308080; ">(</span>reverse<span style="color:#308080; ">=</span><span style="color:#074726; ">True</span><span style="color:#308080; ">)</span>
+    <span style="color:#200080; font-weight:bold; ">while</span> <span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span> <span style="color:#44aadd; ">&gt;</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">:</span>
+        <span style="color:#200080; font-weight:bold; ">print</span> <span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span>
+        block_cut <span style="color:#308080; ">=</span> arr<span style="color:#308080; ">.</span>pop<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span>
+        <span style="color:#200080; font-weight:bold; ">while</span> <span style="color:#400000; ">len</span><span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span> <span style="color:#44aadd; ">&gt;</span> <span style="color:#008c00; ">0</span> <span style="color:#200080; font-weight:bold; ">and</span> arr<span style="color:#308080; ">[</span><span style="color:#44aadd; ">-</span><span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span> <span style="color:#44aadd; ">&lt;=</span> block_cut<span style="color:#308080; ">:</span>
+            arr<span style="color:#308080; ">.</span>pop<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span>
+
+<span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#074726; ">__name__</span> <span style="color:#44aadd; ">==</span> <span style="color:#1060b6; ">'__main__'</span><span style="color:#308080; ">:</span>
+    n <span style="color:#308080; ">=</span> <span style="color:#400000; ">int</span><span style="color:#308080; ">(</span><span style="color:#400000; ">raw_input</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    arr <span style="color:#308080; ">=</span> <span style="color:#400000; ">map</span><span style="color:#308080; ">(</span><span style="color:#400000; ">int</span><span style="color:#308080; ">,</span> <span style="color:#400000; ">raw_input</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">.</span>split<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+    computeSticks<span style="color:#308080; ">(</span>arr<span style="color:#308080; ">)</span>
+</pre>
+
+													</code><h4>Credits:C3</h4>
+									</div>
+									<div id="java2" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">import</span><span style="color:#004a43; "> java</span><span style="color:#808030; ">.</span><span style="color:#004a43; ">io</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">*</span><span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">import</span><span style="color:#004a43; "> java</span><span style="color:#808030; ">.</span><span style="color:#004a43; ">util</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">*</span><span style="color:#800080; ">;</span>
+
+	<span style="color:#800000; font-weight:bold; ">public</span> <span style="color:#800000; font-weight:bold; ">class</span> Solution <span style="color:#800080; ">{</span>
+	<span style="color:#800000; font-weight:bold; ">public</span> <span style="color:#800000; font-weight:bold; ">static</span> <span style="color:#bb7977; ">void</span> main<span style="color:#808030; ">(</span><span style="color:#bb7977; font-weight:bold; ">String</span><span style="color:#808030; ">[</span><span style="color:#808030; ">]</span> args<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+	 <span style="color:#bb7977; font-weight:bold; ">Scanner</span> input <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#bb7977; font-weight:bold; ">Scanner</span><span style="color:#808030; ">(</span><span style="color:#bb7977; font-weight:bold; ">System</span><span style="color:#808030; ">.</span>in<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+	 <span style="color:#bb7977; ">int</span> N <span style="color:#808030; ">=</span> input<span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+	 <span style="color:#bb7977; ">int</span> <span style="color:#808030; ">[</span><span style="color:#808030; ">]</span> sticks <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#bb7977; ">int</span><span style="color:#808030; ">[</span>N<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+	 <span style="color:#800000; font-weight:bold; ">for</span><span style="color:#808030; ">(</span><span style="color:#bb7977; ">int</span> i <span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span> i <span style="color:#808030; ">&lt;</span> N<span style="color:#800080; ">;</span> i<span style="color:#808030; ">+</span><span style="color:#808030; ">+</span><span style="color:#808030; ">)</span>
+	 <span style="color:#800080; ">{</span> sticks<span style="color:#808030; ">[</span>i<span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> input<span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+	    <span style="color:#800080; ">}</span>
+	      <span style="color:#bb7977; ">int</span> sticksLeft <span style="color:#808030; ">=</span> N<span style="color:#800080; ">;</span>
+	      <span style="color:#bb7977; ">int</span> curr <span style="color:#808030; ">=</span> sticks<span style="color:#808030; ">[</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+	      <span style="color:#bb7977; ">int</span> currCount <span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+	      <span style="color:#bb7977; font-weight:bold; ">System</span><span style="color:#808030; ">.</span>out<span style="color:#808030; ">.</span>println<span style="color:#808030; ">(</span>N<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+	      <span style="color:#800000; font-weight:bold; ">for</span><span style="color:#808030; ">(</span><span style="color:#bb7977; ">int</span> i <span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span> i <span style="color:#808030; ">&lt;</span> N<span style="color:#800080; ">;</span> i<span style="color:#808030; ">+</span><span style="color:#808030; ">+</span><span style="color:#808030; ">)</span>
+	      <span style="color:#800080; ">{</span>
+	        <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span>curr <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> sticks<span style="color:#808030; ">[</span>i<span style="color:#808030; ">]</span><span style="color:#808030; ">)</span>
+	        <span style="color:#800080; ">{</span>
+	         currCount<span style="color:#808030; ">+</span><span style="color:#808030; ">+</span><span style="color:#800080; ">;</span>
+	         <span style="color:#800080; ">}</span>
+	        <span style="color:#800000; font-weight:bold; ">else</span>
+	        <span style="color:#800080; ">{</span>
+	          sticksLeft <span style="color:#808030; ">-</span><span style="color:#808030; ">=</span> currCount<span style="color:#800080; ">;</span>
+	          currCount <span style="color:#808030; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#800080; ">;</span>
+	          curr <span style="color:#808030; ">=</span> sticks<span style="color:#808030; ">[</span>i<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+	          <span style="color:#bb7977; font-weight:bold; ">System</span><span style="color:#808030; ">.</span>out<span style="color:#808030; ">.</span>println<span style="color:#808030; ">(</span>sticksLeft<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+	          <span style="color:#800080; ">}</span>
+	       <span style="color:#800080; ">}</span>
+	    <span style="color:#800080; ">}</span>
+	<span style="color:#800080; ">}</span>
+	</pre>
+
+
+													</code>
+									<h4>Credits:C3</h4></div>
+									<div id="c2" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#004a43; ">#</span><span style="color:#004a43; ">include </span><span style="color:#800000; ">&lt;</span><span style="color:#40015a; ">stdio.h</span><span style="color:#800000; ">&gt;</span>
+<span style="color:#004a43; ">#</span><span style="color:#004a43; ">define</span><span style="color:#004a43; "> MAX_A 1000</span>
+
+<span style="color:#200080; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+ <span style="color:#200080; font-weight:bold; ">int</span> n<span style="color:#308080; ">,</span> a<span style="color:#406080; ">;</span>
+ <span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">&amp;</span>n<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+ <span style="color:#200080; font-weight:bold; ">int</span> counts<span style="color:#308080; ">[</span>MAX_A <span style="color:#308080; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span> <span style="color:#308080; ">=</span> <span style="color:#406080; ">{</span><span style="color:#008c00; ">0</span><span style="color:#406080; ">}</span><span style="color:#406080; ">;</span>
+ <span style="color:#200080; font-weight:bold; ">for</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+	 <span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#308080; ">&amp;</span>a<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	 counts<span style="color:#308080; ">[</span>a<span style="color:#308080; ">]</span><span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+ <span style="color:#406080; ">}</span>
+ <span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">,</span> cnt<span style="color:#406080; ">;</span>
+ <span style="color:#200080; font-weight:bold; ">while</span> <span style="color:#308080; ">(</span>n<span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+	 <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span><span style="color:#308080; ">(</span>cnt <span style="color:#308080; ">=</span> counts<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+		 <span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#0f69ff; ">\n</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> n<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+		 n <span style="color:#308080; ">-</span><span style="color:#308080; ">=</span> cnt<span style="color:#406080; ">;</span>
+	 <span style="color:#406080; ">}</span>
+	 i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+ <span style="color:#406080; ">}</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+													</code>
+													<h4>Credits:C3</h4>
+									</div>
+									<div id="cplusplus2" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#004a43; ">#</span><span style="color:#004a43; ">include</span><span style="color:#800000; ">&lt;</span><span style="color:#40015a; ">bits/stdc++.h</span><span style="color:#800000; ">&gt;</span>
+<span style="color:#200080; font-weight:bold; ">using</span> <span style="color:#200080; font-weight:bold; ">namespace</span> <span style="color:#0066ee; ">std</span><span style="color:#406080; ">;</span>
+<span style="color:#200080; font-weight:bold; ">int</span> ar<span style="color:#308080; ">[</span><span style="color:#008c00; ">1001</span><span style="color:#308080; ">]</span><span style="color:#308080; ">,</span>result<span style="color:#308080; ">[</span><span style="color:#008c00; ">1001</span><span style="color:#308080; ">]</span><span style="color:#308080; ">,</span>k <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">,</span>n<span style="color:#406080; ">;</span>
+<span style="color:#200080; font-weight:bold; ">int</span> smal_cal<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+    <span style="color:#200080; font-weight:bold; ">int</span> cnt <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">,</span>smal <span style="color:#308080; ">=</span> <span style="color:#008c00; ">1001</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">for</span><span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+        <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>smal <span style="color:#308080; ">&gt;</span><span style="color:#308080; ">=</span> ar<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span> <span style="color:#308080; ">&amp;</span><span style="color:#308080; ">&amp;</span> ar<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span> <span style="color:#308080; ">!</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span>smal <span style="color:#308080; ">=</span> ar<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+        <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>ar<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span> <span style="color:#308080; ">!</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span>cnt<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    <span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>cnt <span style="color:#308080; ">!</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span><span style="color:#003060; ">cout</span> <span style="color:#308080; ">&lt;</span><span style="color:#308080; ">&lt;</span> cnt <span style="color:#308080; ">&lt;</span><span style="color:#308080; ">&lt;</span> <span style="color:#003060; ">endl</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">return</span> smal<span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+<span style="color:#200080; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+    <span style="color:#003060; ">cin</span> <span style="color:#308080; ">&gt;</span><span style="color:#308080; ">&gt;</span> n<span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">for</span><span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+        <span style="color:#003060; ">cin</span> <span style="color:#308080; ">&gt;</span><span style="color:#308080; ">&gt;</span> ar<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    <span style="color:#200080; font-weight:bold; ">int</span> smal <span style="color:#308080; ">=</span> <span style="color:#008c00; ">1001</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">for</span><span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+        smal <span style="color:#308080; ">=</span> smal_cal<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+        <span style="color:#200080; font-weight:bold; ">for</span><span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> j <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> j <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> j<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span><span style="color:#200080; font-weight:bold; ">if</span><span style="color:#308080; ">(</span>ar<span style="color:#308080; ">[</span>j<span style="color:#308080; ">]</span> <span style="color:#308080; ">!</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span>ar<span style="color:#308080; ">[</span>j<span style="color:#308080; ">]</span><span style="color:#308080; ">-</span><span style="color:#308080; ">=</span>smal<span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    <span style="color:#200080; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+
+										</code>
+										<h4>Credits:C3</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div style="display: flex; justify-content: space-between">
+							<div class="panel-heading">3.Bigger is better</div>
+							<p style="margin-right: 10px">Hard | Max Score: 40</p>
+						</div>
+						<div class="panel-body">
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python3">Python</a></li>
+									<li><a data-toggle="tab" href="#java3">Java</a></li>
+									<li><a data-toggle="tab" href="#c3">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus3">C++</a></li>
+								</ul>
+								<div class="tab-content" style=" margin-top: 20px;text-align: start">
+									<div id="python3" class="tab-pane fade in active">
+										<code>
+												<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> next_permutation<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    
+    i <span style='color:#808030; '>=</span> <span style='color:#400000; '>len</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span> <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span>
+    <span style='color:#800000; font-weight:bold; '>while</span> i <span style='color:#44aadd; '>></span> <span style='color:#008c00; '>0</span> <span style='color:#800000; font-weight:bold; '>and</span> arr<span style='color:#808030; '>[</span>i <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#44aadd; '>>=</span> arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>:</span>
+        i <span style='color:#44aadd; '>-</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span>
+    <span style='color:#800000; font-weight:bold; '>if</span> i <span style='color:#44aadd; '>&lt;=</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>:</span>
+        <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#074726; '>False</span>
+     
+    
+    j <span style='color:#808030; '>=</span> <span style='color:#400000; '>len</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span> <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span>
+    <span style='color:#800000; font-weight:bold; '>while</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span> <span style='color:#44aadd; '>&lt;=</span> arr<span style='color:#808030; '>[</span>i <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>:</span>
+        j <span style='color:#44aadd; '>-</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span>
+    arr<span style='color:#808030; '>[</span>i <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> arr<span style='color:#808030; '>[</span>i <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span>
+     
+ 
+    arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>:</span> <span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>[</span><span style='color:#400000; '>len</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span> <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span> <span style='color:#808030; '>:</span> i <span style='color:#44aadd; '>-</span> <span style='color:#008c00; '>1</span> <span style='color:#808030; '>:</span> <span style='color:#44aadd; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span>
+    <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#074726; '>True</span>
+         
+<span style='color:#800000; font-weight:bold; '>def</span> main<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    t <span style='color:#808030; '>=</span> <span style='color:#400000; '>input</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+    <span style='color:#800000; font-weight:bold; '>for</span> _ <span style='color:#800000; font-weight:bold; '>in</span> <span style='color:#400000; '>xrange</span><span style='color:#808030; '>(</span>t<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+        s <span style='color:#808030; '>=</span> <span style='color:#400000; '>list</span><span style='color:#808030; '>(</span><span style='color:#400000; '>raw_input</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+        <span style='color:#800000; font-weight:bold; '>if</span> next_permutation<span style='color:#808030; '>(</span>s<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+            <span style='color:#800000; font-weight:bold; '>print</span> <span style='color:#0000e6; '>""</span><span style='color:#808030; '>.</span>join<span style='color:#808030; '>(</span>s<span style='color:#808030; '>)</span>
+        <span style='color:#800000; font-weight:bold; '>else</span><span style='color:#808030; '>:</span>
+            <span style='color:#800000; font-weight:bold; '>print</span> <span style='color:#0000e6; '>"no answer"</span>
+     
+<span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#074726; '>__name__</span> <span style='color:#44aadd; '>==</span> <span style='color:#0000e6; '>'__main__'</span><span style='color:#808030; '>:</span>
+    main<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 15:46:40 UTC -->
+											</code>
+											<h4>Credits:C3</h4>
+									</div>
+									<div id="java3" class="tab-pane fade">
+										<code>
+												<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>io</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>util</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>lang</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>StringBuilder</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> Solution <span style='color:#800080; '>{</span>
+
+    <span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>static</span> <span style='color:#bb7977; '>void</span> main<span style='color:#808030; '>(</span><span style='color:#bb7977; font-weight:bold; '>String</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span> args<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+        
+        <span style='color:#bb7977; font-weight:bold; '>Scanner</span> input <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>new</span> <span style='color:#bb7977; font-weight:bold; '>Scanner</span><span style='color:#808030; '>(</span><span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>in<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#bb7977; '>int</span> T <span style='color:#808030; '>=</span> input<span style='color:#808030; '>.</span>nextInt<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        input<span style='color:#808030; '>.</span>nextLine<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        
+        <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#bb7977; '>int</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span> T<span style='color:#800080; '>;</span> i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+        <span style='color:#800080; '>{</span>	
+            <span style='color:#bb7977; font-weight:bold; '>String</span> word <span style='color:#808030; '>=</span> input<span style='color:#808030; '>.</span>nextLine<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>word<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span><span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"no answer"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span><span style='color:#800000; font-weight:bold; '>continue</span><span style='color:#800080; '>;</span><span style='color:#800080; '>}</span>
+            
+            
+            <span style='color:#bb7977; '>int</span> maxLexoC1 <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> <span style='color:#696969; '>//The max lexocographical according to condition 1</span>
+            <span style='color:#bb7977; '>int</span> maxLexoC2 <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> <span style='color:#696969; '>//The max lexocographical according to condition 2</span>
+            
+            
+            
+            <span style='color:#696969; '>//Find the largest index char that is weakly increasing such as g in hefg </span>
+            <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#bb7977; '>int</span> j <span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span> j <span style='color:#808030; '>&lt;</span> word<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span> j<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                <span style='color:#bb7977; '>boolean</span> condition1 <span style='color:#808030; '>=</span> word<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>j<span style='color:#808030; '>)</span> <span style='color:#808030; '>></span> word<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>j<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                    
+                <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>condition1<span style='color:#808030; '>)</span>
+                <span style='color:#800080; '>{</span>
+                    maxLexoC1 <span style='color:#808030; '>=</span> <span style='color:#808030; '>(</span>j <span style='color:#808030; '>></span> maxLexoC1<span style='color:#808030; '>)</span> <span style='color:#808030; '>?</span> j <span style='color:#808030; '>:</span> maxLexoC1<span style='color:#800080; '>;</span>
+                <span style='color:#800080; '>}</span>
+            <span style='color:#800080; '>}</span>
+            
+            
+            <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>maxLexoC1<span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span><span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"no answer"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span><span style='color:#800000; font-weight:bold; '>continue</span><span style='color:#800080; '>;</span><span style='color:#800080; '>}</span>
+            
+                        <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#bb7977; '>int</span> j <span style='color:#808030; '>=</span> maxLexoC1<span style='color:#800080; '>;</span> j <span style='color:#808030; '>&lt;</span> word<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span> j<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                <span style='color:#bb7977; '>boolean</span> condition2 <span style='color:#808030; '>=</span> word<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>j<span style='color:#808030; '>)</span> <span style='color:#808030; '>></span> word<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>maxLexoC1<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                    
+                <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>condition2<span style='color:#808030; '>)</span>
+                <span style='color:#800080; '>{</span>
+                    maxLexoC2 <span style='color:#808030; '>=</span> j<span style='color:#800080; '>;</span>
+                <span style='color:#800080; '>}</span>
+            <span style='color:#800080; '>}</span>
+            
+            <span style='color:#bb7977; font-weight:bold; '>StringBuilder</span> wordSB <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>new</span> <span style='color:#bb7977; font-weight:bold; '>StringBuilder</span><span style='color:#808030; '>(</span>word<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            
+            
+            <span style='color:#bb7977; '>char</span> tmp <span style='color:#808030; '>=</span> wordSB<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>maxLexoC1<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            wordSB<span style='color:#808030; '>.</span>setCharAt<span style='color:#808030; '>(</span>maxLexoC1<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>,</span> wordSB<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>maxLexoC2<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            wordSB<span style='color:#808030; '>.</span>setCharAt<span style='color:#808030; '>(</span>maxLexoC2<span style='color:#808030; '>,</span> tmp<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                        
+            
+            
+            <span style='color:#bb7977; '>int</span> left <span style='color:#808030; '>=</span> maxLexoC1<span style='color:#800080; '>;</span>
+            <span style='color:#bb7977; '>int</span> right <span style='color:#808030; '>=</span> wordSB<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>left <span style='color:#808030; '>&lt;</span> right<span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                tmp <span style='color:#808030; '>=</span> wordSB<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>left<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                wordSB<span style='color:#808030; '>.</span>setCharAt<span style='color:#808030; '>(</span>left<span style='color:#808030; '>,</span> wordSB<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>right<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                wordSB<span style='color:#808030; '>.</span>setCharAt<span style='color:#808030; '>(</span>right<span style='color:#808030; '>,</span> tmp<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                left<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#800080; '>;</span>
+                right<span style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span>
+            
+            
+            <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span>wordSB<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#800080; '>}</span>
+    <span style='color:#800080; '>}</span>
+<span style='color:#800080; '>}</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 15:43:58 UTC -->
+											</code>
+											<h4>Credits:C3</h4>
+									</div>
+									<div id="c3" class="tab-pane fade">
+										<code>
+												println("Hello World");
+											</code>
+											<h4></h4>
+									</div>
+									<div id="cplusplus3" class="tab-pane fade">
+										<code>
+												<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>bits/stdc++.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>using</span> <span style='color:#800000; font-weight:bold; '>namespace</span> <span style='color:#666616; '>std</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+
+    <span style='color:#800000; font-weight:bold; '>int</span> n<span style='color:#808030; '>,</span>k<span style='color:#808030; '>,</span>a<span style='color:#808030; '>,</span>h <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+
+    <span style='color:#603000; '>cin</span> <span style='color:#808030; '>></span><span style='color:#808030; '>></span> n <span style='color:#808030; '>></span><span style='color:#808030; '>></span> k<span style='color:#800080; '>;</span>
+    <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span> n<span style='color:#800080; '>;</span> i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+        <span style='color:#603000; '>cin</span> <span style='color:#808030; '>></span><span style='color:#808030; '>></span> a<span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>a <span style='color:#808030; '>></span> h<span style='color:#808030; '>)</span>h <span style='color:#808030; '>=</span> a<span style='color:#800080; '>;</span>
+    <span style='color:#800080; '>}</span>
+    <span style='color:#808030; '>(</span>k <span style='color:#808030; '>></span><span style='color:#808030; '>=</span> h<span style='color:#808030; '>)</span> <span style='color:#800080; '>?</span> <span style='color:#603000; '>cout</span> <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> <span style='color:#603000; '>endl</span> <span style='color:#800080; '>:</span> <span style='color:#603000; '>cout</span> <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> h<span style='color:#808030; '>-</span>k <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> <span style='color:#603000; '>endl</span><span style='color:#800080; '>;</span>
+
+    <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 15:28:35 UTC -->
+											</code>
+											<h4>Credits:C3</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-4">
+					<div class="footer-widget mb-30">
+						<!-- Logo -->
+						<a href="../index.html" class="foo-logo d-block mb-4 text-center"><img
+								src="../img/core-img/logo2.png" alt="" /></a>
+						<p>
+							Creating a technical atmosphere amongst the student. Enhancing
+							student’s analytical and technical thinking. Making students
+							industry ready by keeping them up-to-date with industry standard
+							technologies.
+						</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-3 offset-xl-1">
+					<div class="footer-widget mb-30">
+						<h6 class="widget-title">Reach Us</h6>
+
+						<!-- Single Blog Post -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6598743524723!2d72.82654491438136!3d19.38387464726096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aec0a4b41bef%3A0xbd1a4ca919d6a613!2sVidyavardhini&#39;s+College+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1552972733009"
+							width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+						<!-- Single Blog Post -->
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-3 offset-xl-1">
+					<div class="footer-widget mb-30">
+						<h6 class="widget-title">Our Aim</h6>
+						<!-- Contact Address -->
+						<div class="contact-address">
+							<p>
+								C3 is a peer to peer learning group, which focuses on teaching
+								and learning various skills and sharing expertise among the
+								students for a cumulative growth of the community
+							</p>
+						</div>
+						<!-- Footer Social Area -->
+						<div class="footer-social-area">
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copywrite Area -->
+		<div class="copywrite-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- Copywrite Text -->
+					<div class="col-12 col-sm-6">
+						<p class="copywrite-text">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved
+							<i class="fa fa-heart-o" aria-hidden="true"></i> by
+							<a href="" target="_blank">Core Coding Committee</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+					<div class="col-12 col-sm-6">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="django/blog/blog-grid.html">Subject</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script src="../js/jquery/jquery-2.2.4.min.js"></script>
+	<!-- Popper js -->
+	<script src="../js/bootstrap/popper.min.js"></script>
+	<!-- Bootstrap js -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<!-- All Plugins js -->
+	<script src="../js/plugins/plugins.js"></script>
+	<!-- Active js -->
+	<script src="../js/active.js"></script>
+
+
+</body>
+
+</html>

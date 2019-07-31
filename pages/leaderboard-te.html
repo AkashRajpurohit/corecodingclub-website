@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title -->
+	<title>C3 - Leaderboard</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="../img/core-img/favicon.ico" />
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+
+</head>
+
+<body style="background-color: #222627">
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="lds-ellipsis">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Top Header Area -->
+
+		<!-- Navbar Area -->
+		<div class="vizew-main-menu" id="sticker">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="vizewNav">
+						<!-- Nav brand -->
+						<a href="../index.html" class="nav-brand"><img src="../img/core-img/logo.png" alt="" /></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<div class="classy-menu">
+							<!-- Close Button -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li><a href="../index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li>
+										<a href="#">Subject</a>
+										<ul class="dropdown">
+											<li>
+												<a href="django/blog/blog-grid.html">- Django</a>
+											</li>
+											<li>
+												<a href="mongodb/blog/blog-grid.html">- MongoDB</a>
+											</li>
+											<li>
+												<a href="hadoop/blog/blog-grid.html">- Hadoop</a>
+											</li>
+											<li>
+												<a href="testing/blog/blog-grid.html">- Testing</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="leaderboard-se.html">Leaderboard</a>
+										<ul class="dropdown">
+											<li>
+												<a href="leaderboard-se.html">- SE</a>
+											</li>
+											<li>
+												<a href="leaderboard-te.html">- TE</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="team.html">Team</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ##### Header Area End ##### -->
+
+	<!-- ##### Breadcrumb Area Start ##### -->
+	<div class="vizew-breadcrumb"></div>
+	<!-- ##### Breadcrumb Area End ##### -->
+
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 style="color: white">Week 0</h2>
+			</div>
+			<div class="container">
+
+				<table class="table table-dark table-striped" style="text-align: center">
+
+					<tr style="background-color: brown">
+						<td>Rank</td>
+						<td>WinnerName</td>
+						<td>Q1</td>
+						<td>Q2</td>
+						<td>Q3</td>
+						<td>Total</td>
+					</tr>
+
+
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Ravi Singh</td>
+							<td>15</td>
+							<td>35</td>
+							<td>44.51</td>
+							<td>94.51</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Devdoot Maji</td>
+							<td>15</td>
+							<td>35</td>
+							<td>33.30</td>
+							<td>83.30</td>
+
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Dipak Gautam</td>
+							<td>15</td>
+							<td>35</td>
+							<td>22..31</td>
+							<td>62.31</td>
+						</tr>
+					</tbody>
+				</table>
+				<p style="display: table">Note: <i>In case of Tie, the ranking is assigned by time taken to submit the
+						solution.</i></p>
+
+
+				<div class="container-fluid">
+					<h3 style="color: white">Challenges:</h3>
+					<div class="panel-group">
+
+						<div class="panel panel-default">
+							<div style="display: flex; justify-content: space-between">
+								<div class="panel-heading">1.The Hurdle Race</div>
+								<p style="margin-right: 10px">Easy | Max Score: 15</p>
+							</div>
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python1">Python</a></li>
+									<li><a data-toggle="tab" href="#java1">Java</a></li>
+									<li><a data-toggle="tab" href="#c1">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus1">C++</a></li>
+								</ul>
+								<div class="tab-content" style="margin-top: 20px;text-align: start">
+									<div id="python1" class="tab-pane fade in active">
+										<code>
+											
+<pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">import</span> math
+<span style="color:#800000; font-weight:bold; ">import</span> os
+<span style="color:#800000; font-weight:bold; ">import</span> random
+<span style="color:#800000; font-weight:bold; ">import</span> re
+<span style="color:#800000; font-weight:bold; ">import</span> sys
+
+<span style="color:#696969; "># Complete the hurdleRace function below.</span>
+<span style="color:#800000; font-weight:bold; ">def</span> hurdleRace<span style="color:#808030; ">(</span>k<span style="color:#808030; ">,</span> height<span style="color:#808030; ">)</span><span style="color:#808030; ">:</span>
+    maxi <span style="color:#808030; ">=</span> <span style="color:#400000; ">max</span><span style="color:#808030; ">(</span>height<span style="color:#808030; ">)</span>
+    <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span>maxi<span style="color:#44aadd; ">&gt;</span>k<span style="color:#808030; ">)</span><span style="color:#808030; ">:</span>
+        <span style="color:#800000; font-weight:bold; ">return</span> maxi<span style="color:#44aadd; ">-</span>k
+    <span style="color:#800000; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span>
+
+<span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#074726; ">__name__</span> <span style="color:#44aadd; ">==</span> <span style="color:#0000e6; ">'__main__'</span><span style="color:#808030; ">:</span>
+    fptr <span style="color:#808030; ">=</span> <span style="color:#400000; ">open</span><span style="color:#808030; ">(</span>os<span style="color:#808030; ">.</span>environ<span style="color:#808030; ">[</span><span style="color:#0000e6; ">'OUTPUT_PATH'</span><span style="color:#808030; ">]</span><span style="color:#808030; ">,</span> <span style="color:#0000e6; ">'w'</span><span style="color:#808030; ">)</span>
+
+    nk <span style="color:#808030; ">=</span> <span style="color:#400000; ">input</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>split<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+
+    n <span style="color:#808030; ">=</span> <span style="color:#400000; ">int</span><span style="color:#808030; ">(</span>nk<span style="color:#808030; ">[</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">]</span><span style="color:#808030; ">)</span>
+
+    k <span style="color:#808030; ">=</span> <span style="color:#400000; ">int</span><span style="color:#808030; ">(</span>nk<span style="color:#808030; ">[</span><span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span><span style="color:#808030; ">)</span>
+
+    height <span style="color:#808030; ">=</span> <span style="color:#400000; ">list</span><span style="color:#808030; ">(</span><span style="color:#400000; ">map</span><span style="color:#808030; ">(</span><span style="color:#400000; ">int</span><span style="color:#808030; ">,</span> <span style="color:#400000; ">input</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>rstrip<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>split<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
+
+    result <span style="color:#808030; ">=</span> hurdleRace<span style="color:#808030; ">(</span>k<span style="color:#808030; ">,</span> height<span style="color:#808030; ">)</span>
+
+    fptr<span style="color:#808030; ">.</span>write<span style="color:#808030; ">(</span><span style="color:#400000; ">str</span><span style="color:#808030; ">(</span>result<span style="color:#808030; ">)</span> <span style="color:#44aadd; ">+</span> <span style="color:#0000e6; ">'</span><span style="color:#0f69ff; ">\n</span><span style="color:#0000e6; ">'</span><span style="color:#808030; ">)</span>
+
+    fptr<span style="color:#808030; ">.</span>close<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+</pre>
+
+										</code>
+										<h4>Credits:C3</h4>
+									</div>
+									<div id="java1" class="tab-pane fade">
+										<code>
+											
+<pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">import</span> java<span style="color:#808030; ">.</span>io<span style="color:#808030; ">.</span><span style="color:#44aadd; ">*</span><span style="color:#808030; ">;</span>
+<span style="color:#800000; font-weight:bold; ">import</span> java<span style="color:#808030; ">.</span>util<span style="color:#808030; ">.</span><span style="color:#44aadd; ">*</span><span style="color:#808030; ">;</span>
+<span style="color:#800000; font-weight:bold; ">import</span> java<span style="color:#808030; ">.</span>text<span style="color:#808030; ">.</span><span style="color:#44aadd; ">*</span><span style="color:#808030; ">;</span>
+<span style="color:#800000; font-weight:bold; ">import</span> java<span style="color:#808030; ">.</span>math<span style="color:#808030; ">.</span><span style="color:#44aadd; ">*</span><span style="color:#808030; ">;</span>
+<span style="color:#800000; font-weight:bold; ">import</span> java<span style="color:#808030; ">.</span>util<span style="color:#808030; ">.</span>regex<span style="color:#808030; ">.</span><span style="color:#44aadd; ">*</span><span style="color:#808030; ">;</span>
+
+public <span style="color:#800000; font-weight:bold; ">class</span> Solution <span style="color:#800080; ">{</span>
+
+    public static void main<span style="color:#808030; ">(</span>String<span style="color:#808030; ">[</span><span style="color:#808030; ">]</span> args<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+        Scanner <span style="color:#800000; font-weight:bold; ">in</span> <span style="color:#808030; ">=</span> new Scanner<span style="color:#808030; ">(</span>System<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">in</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+        <span style="color:#400000; ">int</span> n <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">in</span><span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+        <span style="color:#400000; ">int</span> k <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">in</span><span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+        <span style="color:#400000; ">int</span> <span style="color:#400000; ">max</span> <span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">;</span>
+        <span style="color:#800000; font-weight:bold; ">for</span><span style="color:#808030; ">(</span><span style="color:#400000; ">int</span> i<span style="color:#808030; ">=</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">;</span> i <span style="color:#44aadd; ">&lt;</span> n<span style="color:#808030; ">;</span> i<span style="color:#44aadd; ">+</span><span style="color:#44aadd; ">+</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+            <span style="color:#400000; ">max</span> <span style="color:#808030; ">=</span> Math<span style="color:#808030; ">.</span><span style="color:#400000; ">max</span><span style="color:#808030; ">(</span><span style="color:#400000; ">max</span><span style="color:#808030; ">,</span><span style="color:#800000; font-weight:bold; ">in</span><span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+        <span style="color:#800080; ">}</span>
+        <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span>k<span style="color:#44aadd; ">-</span><span style="color:#400000; ">max</span> <span style="color:#44aadd; ">&lt;</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span>
+            System<span style="color:#808030; ">.</span>out<span style="color:#808030; ">.</span>println<span style="color:#808030; ">(</span>Math<span style="color:#808030; ">.</span><span style="color:#400000; ">abs</span><span style="color:#808030; ">(</span>k<span style="color:#44aadd; ">-</span><span style="color:#400000; ">max</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+        <span style="color:#800000; font-weight:bold; ">else</span>
+        System<span style="color:#808030; ">.</span>out<span style="color:#808030; ">.</span>println<span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span><span style="color:#808030; ">;</span>
+    <span style="color:#800080; ">}</span>
+<span style="color:#800080; ">}</span>
+</pre>
+
+										</code>
+									<h4>Credits:C3</h4>
+									</div>
+									<div id="c1" class="tab-pane fade">
+										<code>
+											println("Hello World");
+										</code>
+										<h4></h4>
+									</div>
+									<div id="cplusplus1" class="tab-pane fade">
+										<code>
+
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#004a43; ">#</span><span style="color:#004a43; ">include </span><span style="color:#800000; ">&lt;</span><span style="color:#40015a; ">bits/stdc++.h</span><span style="color:#800000; ">&gt;</span>
+<span style="color:#200080; font-weight:bold; ">using</span> <span style="color:#200080; font-weight:bold; ">namespace</span> <span style="color:#0066ee; ">std</span><span style="color:#406080; ">;</span>
+<span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#003060; ">string</span><span style="color:#406080; ">&gt;</span> split_string<span style="color:#308080; ">(</span><span style="color:#003060; ">string</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+<span style="color:#200080; font-weight:bold; ">int</span> hurdleRace<span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> k<span style="color:#308080; ">,</span> <span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#200080; font-weight:bold; ">int</span><span style="color:#406080; ">&gt;</span> height<span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+    <span style="color:#003060; ">sort</span><span style="color:#308080; ">(</span>height<span style="color:#308080; ">.</span>begin<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">,</span>height<span style="color:#308080; ">.</span>end<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">int</span> diff <span style="color:#308080; ">=</span> height<span style="color:#308080; ">[</span>height<span style="color:#308080; ">.</span>size<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">-</span><span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#308080; ">-</span>k<span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">return</span> diff<span style="color:#308080; ">&gt;</span><span style="color:#008c00; ">0</span><span style="color:#406080; ">?</span>diff<span style="color:#406080; ">:</span><span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+<span style="color:#200080; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span>
+<span style="color:#406080; ">{</span>
+   <span style="color:#003060; ">ofstream</span> fout<span style="color:#308080; ">(</span><span style="color:#003060; ">getenv</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">OUTPUT_PATH</span><span style="color:#800000; ">"</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+   <span style="color:#003060; ">string</span> nk_temp<span style="color:#406080; ">;</span>
+   getline<span style="color:#308080; ">(</span><span style="color:#003060; ">cin</span><span style="color:#308080; ">,</span> nk_temp<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+   <span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#003060; ">string</span><span style="color:#406080; ">&gt;</span> nk <span style="color:#308080; ">=</span> split_string<span style="color:#308080; ">(</span>nk_temp<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">int</span> n <span style="color:#308080; ">=</span> stoi<span style="color:#308080; ">(</span>nk<span style="color:#308080; ">[</span><span style="color:#008c00; ">0</span><span style="color:#308080; ">]</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+
+    <span style="color:#200080; font-weight:bold; ">int</span> k <span style="color:#308080; ">=</span> stoi<span style="color:#308080; ">(</span>nk<span style="color:#308080; ">[</span><span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">string</span> height_temp_temp<span style="color:#406080; ">;</span>
+    getline<span style="color:#308080; ">(</span><span style="color:#003060; ">cin</span><span style="color:#308080; ">,</span> height_temp_temp<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#003060; ">string</span><span style="color:#406080; ">&gt;</span> height_temp <span style="color:#308080; ">=</span> split_string<span style="color:#308080; ">(</span>height_temp_temp<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#200080; font-weight:bold; ">int</span><span style="color:#406080; ">&gt;</span> height<span style="color:#308080; ">(</span>n<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">for</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">int</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span> i <span style="color:#308080; ">&lt;</span> n<span style="color:#406080; ">;</span> i<span style="color:#308080; ">+</span><span style="color:#308080; ">+</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+        <span style="color:#200080; font-weight:bold; ">int</span> height_item <span style="color:#308080; ">=</span> stoi<span style="color:#308080; ">(</span>height_temp<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+        height<span style="color:#308080; ">[</span>i<span style="color:#308080; ">]</span> <span style="color:#308080; ">=</span> height_item<span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    <span style="color:#200080; font-weight:bold; ">int</span> result <span style="color:#308080; ">=</span> hurdleRace<span style="color:#308080; ">(</span>k<span style="color:#308080; ">,</span> height<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    fout <span style="color:#308080; ">&lt;</span><span style="color:#308080; ">&lt;</span> result <span style="color:#308080; ">&lt;</span><span style="color:#308080; ">&lt;</span> <span style="color:#800000; ">"</span><span style="color:#0f69ff; ">\n</span><span style="color:#800000; ">"</span><span style="color:#406080; ">;</span>
+    fout<span style="color:#308080; ">.</span>close<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+<span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#003060; ">string</span><span style="color:#406080; ">&gt;</span> split_string<span style="color:#308080; ">(</span><span style="color:#003060; ">string</span> input_string<span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+    <span style="color:#003060; ">string</span><span style="color:#406080; ">::</span><span style="color:#003060; ">iterator</span> new_end <span style="color:#308080; ">=</span> <span style="color:#003060; ">unique</span><span style="color:#308080; ">(</span>input_string<span style="color:#308080; ">.</span>begin<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">,</span> input_string<span style="color:#308080; ">.</span>end<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">,</span>
+ <span style="color:#308080; ">[</span><span style="color:#308080; ">]</span> <span style="color:#308080; ">(</span><span style="color:#200080; font-weight:bold; ">const</span> <span style="color:#200080; font-weight:bold; ">char</span> <span style="color:#308080; ">&amp;</span>x<span style="color:#308080; ">,</span> <span style="color:#200080; font-weight:bold; ">const</span> <span style="color:#200080; font-weight:bold; ">char</span> <span style="color:#308080; ">&amp;</span>y<span style="color:#308080; ">)</span> <span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; ">{</span>
+        <span style="color:#200080; font-weight:bold; ">return</span> x <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> y <span style="color:#200080; font-weight:bold; ">and</span> x <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#1060b6; ">' '</span><span style="color:#406080; ">;</span>
+    <span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; ">}</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    input_string<span style="color:#308080; ">.</span>erase<span style="color:#308080; ">(</span>new_end<span style="color:#308080; ">,</span> input_string<span style="color:#308080; ">.</span>end<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">while</span> <span style="color:#308080; ">(</span>input_string<span style="color:#308080; ">[</span>input_string<span style="color:#308080; ">.</span>length<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span> <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span> <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#1060b6; ">' '</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+        input_string<span style="color:#308080; ">.</span>pop_back<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    <span style="color:#003060; ">vector</span><span style="color:#406080; ">&lt;</span><span style="color:#003060; ">string</span><span style="color:#406080; ">&gt;</span> splits<span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">char</span> delimiter <span style="color:#308080; ">=</span> <span style="color:#1060b6; ">' '</span><span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">size_t</span> i <span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+    <span style="color:#003060; ">size_t</span> pos <span style="color:#308080; ">=</span> input_string<span style="color:#308080; ">.</span><span style="color:#003060; ">find</span><span style="color:#308080; ">(</span>delimiter<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">while</span> <span style="color:#308080; ">(</span>pos <span style="color:#308080; ">!</span><span style="color:#308080; ">=</span> <span style="color:#003060; ">string</span><span style="color:#406080; ">::</span><span style="color:#7d0045; ">npos</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+        splits<span style="color:#308080; ">.</span>push_back<span style="color:#308080; ">(</span>input_string<span style="color:#308080; ">.</span>substr<span style="color:#308080; ">(</span>i<span style="color:#308080; ">,</span> pos <span style="color:#308080; ">-</span> i<span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+        i <span style="color:#308080; ">=</span> pos <span style="color:#308080; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#406080; ">;</span>
+        pos <span style="color:#308080; ">=</span> input_string<span style="color:#308080; ">.</span><span style="color:#003060; ">find</span><span style="color:#308080; ">(</span>delimiter<span style="color:#308080; ">,</span> i<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#406080; ">}</span>
+    splits<span style="color:#308080; ">.</span>push_back<span style="color:#308080; ">(</span>input_string<span style="color:#308080; ">.</span>substr<span style="color:#308080; ">(</span>i<span style="color:#308080; ">,</span> <span style="color:#003060; ">min</span><span style="color:#308080; ">(</span>pos<span style="color:#308080; ">,</span> input_string<span style="color:#308080; ">.</span>length<span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span> <span style="color:#308080; ">-</span> i <span style="color:#308080; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+    <span style="color:#200080; font-weight:bold; ">return</span> splits<span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+										</code>
+										<h4>Credits:Ravi Singh</h4>
+										<a href="https://www.hackerrank.com/onecourse1?h_r=internal-search&hr_r=1">Handle</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div style="display: flex; justify-content: space-between">
+							<div class="panel-heading">2.The Time In Words</div>
+							<p style="margin-right: 10px">Medium | Max Score: 35</p>
+						</div>
+						<div class="panel-body">
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python2">Python</a></li>
+									<li><a data-toggle="tab" href="#java2">Java</a></li>
+									<li><a data-toggle="tab" href="#c2">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus2">C++</a></li>
+								</ul>
+								<div class="tab-content" style="margin-top: 20px; text-align: start">
+									<div id="python2" class="tab-pane fade in active">
+										<code>
+													<pre style='color:#000000;background:#ffffff;'>mins <span style='color:#808030; '>=</span> <span style='color:#800080; '>{</span>
+    <span style='color:#008c00; '>1</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"one minute"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>2</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"two minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>3</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"three minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>4</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"four minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>5</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"five minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>6</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"six minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>7</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"seven minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>8</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"eight minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>9</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"nine minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>10</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"ten minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>11</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"eleven minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>12</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twelve minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>13</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"thirteen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>14</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"fourteen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>15</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"quarter"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>16</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"sixteen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>17</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"seventeen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>18</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"eighteen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>19</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"nineteen minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>20</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>21</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty one minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>22</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty two minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>23</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty three minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>24</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty four minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>25</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty five minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>26</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty six minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>27</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty seven minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>28</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty eight minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>29</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twenty nine minutes"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>30</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"half"</span>
+<span style='color:#800080; '>}</span>
+
+hours <span style='color:#808030; '>=</span> <span style='color:#800080; '>{</span>
+    <span style='color:#008c00; '>1</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"one"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>2</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"two"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>3</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"three"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>4</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"four"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>5</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"five"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>6</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"six"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>7</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"seven"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>8</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"eight"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>9</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"nine"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>10</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"ten"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>11</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"eleven"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>12</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"twelve"</span><span style='color:#808030; '>,</span>
+    <span style='color:#008c00; '>13</span><span style='color:#808030; '>:</span><span style='color:#0000e6; '>"one"</span>
+<span style='color:#800080; '>}</span>
+h <span style='color:#808030; '>=</span> <span style='color:#400000; '>int</span><span style='color:#808030; '>(</span><span style='color:#400000; '>raw_input</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+m <span style='color:#808030; '>=</span> <span style='color:#400000; '>int</span><span style='color:#808030; '>(</span><span style='color:#400000; '>raw_input</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+<span style='color:#800000; font-weight:bold; '>if</span> m <span style='color:#44aadd; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>print</span> hours<span style='color:#808030; '>[</span>h<span style='color:#808030; '>]</span> <span style='color:#44aadd; '>+</span> <span style='color:#0000e6; '>" o' clock"</span>
+<span style='color:#800000; font-weight:bold; '>elif</span> m <span style='color:#44aadd; '>&lt;=</span> <span style='color:#008c00; '>30</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>print</span> mins<span style='color:#808030; '>[</span>m<span style='color:#808030; '>]</span> <span style='color:#44aadd; '>+</span> <span style='color:#0000e6; '>" past "</span> <span style='color:#44aadd; '>+</span> hours<span style='color:#808030; '>[</span>h<span style='color:#808030; '>]</span>
+<span style='color:#800000; font-weight:bold; '>else</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>print</span> mins<span style='color:#808030; '>[</span><span style='color:#008c00; '>60</span><span style='color:#44aadd; '>-</span>m<span style='color:#808030; '>]</span> <span style='color:#44aadd; '>+</span> <span style='color:#0000e6; '>' to '</span> <span style='color:#44aadd; '>+</span> hours<span style='color:#808030; '>[</span>h<span style='color:#44aadd; '>+</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 17:05:55 UTC -->
+												</code>
+												<h4>Credits:C3</h4>
+									</div>
+									<div id="java2" class="tab-pane fade">
+										<code>
+													
+<pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">import</span><span style="color:#004a43; "> java</span><span style="color:#808030; ">.</span><span style="color:#004a43; ">util</span><span style="color:#808030; ">.</span><span style="color:#004a43; ">Scanner</span><span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">public</span> <span style="color:#800000; font-weight:bold; ">class</span> Solution <span style="color:#800080; ">{</span>
+
+  <span style="color:#800000; font-weight:bold; ">public</span> <span style="color:#800000; font-weight:bold; ">static</span> <span style="color:#bb7977; ">void</span> main<span style="color:#808030; ">(</span><span style="color:#bb7977; font-weight:bold; ">String</span><span style="color:#808030; ">[</span><span style="color:#808030; ">]</span> args<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+    <span style="color:#bb7977; font-weight:bold; ">Scanner</span> in <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#bb7977; font-weight:bold; ">Scanner</span><span style="color:#808030; ">(</span><span style="color:#bb7977; font-weight:bold; ">System</span><span style="color:#808030; ">.</span>in<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#bb7977; ">int</span> h <span style="color:#808030; ">=</span> in <span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#bb7977; ">int</span> m <span style="color:#808030; ">=</span> in <span style="color:#808030; ">.</span>nextInt<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#bb7977; font-weight:bold; ">String</span> word<span style="color:#808030; ">[</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800080; ">{</span>
+      <span style="color:#0000e6; ">""</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"one"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"two"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"three"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"four"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"five"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"six"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"seven"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"eight"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"nine"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"ten"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"eleven"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twelve"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"thirteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"fourteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"fifteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"sixteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"seventeen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"eighteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"nineteen"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty one"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty two"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty three"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty four"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty five"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty six"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty seven"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty eight"</span><span style="color:#808030; ">,</span>
+      <span style="color:#0000e6; ">"twenty nine"</span>
+    <span style="color:#800080; ">}</span><span style="color:#800080; ">;</span>
+    <span style="color:#bb7977; font-weight:bold; ">String</span> time <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">""</span><span style="color:#800080; ">;</span>
+
+    <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> word<span style="color:#808030; ">[</span>h<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#0000e6; ">" o' clock"</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">15</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"quarter past "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">30</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"half past "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">45</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"quarter to "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h <span style="color:#808030; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> word<span style="color:#808030; ">[</span>m<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#0000e6; ">" minute past "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>m <span style="color:#808030; ">&lt;</span> <span style="color:#008c00; ">30</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> word<span style="color:#808030; ">[</span>m<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#0000e6; ">" minutes past "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800080; ">{</span>
+      time <span style="color:#808030; ">=</span> word<span style="color:#808030; ">[</span><span style="color:#008c00; ">60</span> <span style="color:#808030; ">-</span> m<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#0000e6; ">" minutes to "</span> <span style="color:#808030; ">+</span> word<span style="color:#808030; ">[</span>h <span style="color:#808030; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span>
+    <span style="color:#bb7977; font-weight:bold; ">System</span><span style="color:#808030; ">.</span>out<span style="color:#808030; ">.</span>println<span style="color:#808030; ">(</span>time<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span>
+<span style="color:#800080; ">}</span>
+</pre>
+
+												</code>
+												<h4>Credits:C3</h4>
+									</div>
+									<div id="c2" class="tab-pane fade">
+										<code>
+
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#308080; ">(</span><span style="color:#308080; ">)</span><span style="color:#406080; ">{</span>
+	<span style="color:#200080; font-weight:bold; ">int</span> h<span style="color:#406080; ">;</span>
+	<span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span><span style="color:#308080; ">&amp;</span>h<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#200080; font-weight:bold; ">int</span> m<span style="color:#406080; ">;</span>
+	<span style="color:#003060; ">scanf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%d</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span><span style="color:#308080; ">&amp;</span>m<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#200080; font-weight:bold; ">char</span> <span style="color:#308080; ">*</span>hours<span style="color:#308080; ">[</span><span style="color:#308080; ">]</span> <span style="color:#308080; ">=</span> <span style="color:#406080; ">{</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">one</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">two</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">three</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">four</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">five</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">six</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">seven</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span>
+		      <span style="color:#800000; ">"</span><span style="color:#1060b6; ">eight</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">nine</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">ten</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">eleven</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twelve</span><span style="color:#800000; ">"</span><span style="color:#406080; ">}</span><span style="color:#406080; ">;</span>
+
+	<span style="color:#200080; font-weight:bold; ">char</span> <span style="color:#308080; ">*</span>minutes<span style="color:#308080; ">[</span><span style="color:#308080; ">]</span> <span style="color:#308080; ">=</span> <span style="color:#406080; ">{</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">one</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">two</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">three</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">four</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">five</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">six</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">seven</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">eight</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">nine</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">ten</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span>
+			<span style="color:#800000; ">"</span><span style="color:#1060b6; ">eleven</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twelve</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">thirteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">fourteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">fifteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span>
+			<span style="color:#800000; ">"</span><span style="color:#1060b6; ">sixteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">seventeen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">eighteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">ninteen</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span>
+			<span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty one</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty two</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty three</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty four</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty five</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span>
+			<span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty six</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty seven</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty eight</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty nine</span><span style="color:#800000; ">"</span><span style="color:#406080; ">}</span><span style="color:#406080; ">;</span>
+	<span style="color:#200080; font-weight:bold; ">char</span> <span style="color:#308080; ">*</span>hour<span style="color:#406080; ">;</span>
+	<span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%s</span><span style="color:#1060b6; "> o' clock</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">one minute past </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">10</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">ten minutes past </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">15</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">quarter past </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">30</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">half past </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">40</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h<span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">twenty minutes to </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">=</span><span style="color:#308080; ">=</span> <span style="color:#008c00; ">45</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h<span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#1060b6; ">quarter to </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">&lt;</span> <span style="color:#008c00; ">30</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%s</span><span style="color:#1060b6; "> minutes past </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> minutes<span style="color:#308080; ">[</span>m <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+	<span style="color:#200080; font-weight:bold; ">else</span> <span style="color:#200080; font-weight:bold; ">if</span> <span style="color:#308080; ">(</span>m <span style="color:#308080; ">&gt;</span> <span style="color:#008c00; ">30</span><span style="color:#308080; ">)</span> <span style="color:#406080; ">{</span>
+			hour <span style="color:#308080; ">=</span> hours<span style="color:#308080; ">[</span>h<span style="color:#308080; ">]</span><span style="color:#406080; ">;</span>
+			<span style="color:#003060; ">printf</span><span style="color:#308080; ">(</span><span style="color:#800000; ">"</span><span style="color:#007997; ">%s</span><span style="color:#1060b6; "> minutes to </span><span style="color:#007997; ">%s</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> minutes<span style="color:#308080; ">[</span><span style="color:#008c00; ">60</span> <span style="color:#308080; ">-</span> m <span style="color:#308080; ">-</span> <span style="color:#008c00; ">1</span><span style="color:#308080; ">]</span><span style="color:#308080; ">,</span> hour<span style="color:#308080; ">)</span><span style="color:#406080; ">;</span>
+	<span style="color:#406080; ">}</span>
+ <span style="color:#200080; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#406080; ">;</span>
+<span style="color:#406080; ">}</span>
+</pre>
+
+												</code>
+												<h4>Credits:Ravi Singh</h4>
+												<a href="https://www.hackerrank.com/onecourse1?h_r=internal-search&hr_r=1">Handle</a>
+									</div>
+									<div id="cplusplus2" class="tab-pane fade">
+										<code>
+													
+<pre style="color:#000000;background:#ffffff;"><span style="color:#004a43; ">#</span><span style="color:#004a43; ">include</span><span style="color:#800000; ">&lt;</span><span style="color:#40015a; ">bits/stdc++.h</span><span style="color:#800000; ">&gt;</span>
+<span style="color:#800000; font-weight:bold; ">using</span> <span style="color:#800000; font-weight:bold; ">namespace</span> <span style="color:#666616; ">std</span><span style="color:#800080; ">;</span>
+
+<span style="color:#800000; font-weight:bold; ">int</span> <span style="color:#400000; ">main</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+
+    <span style="color:#800000; font-weight:bold; ">int</span> hr<span style="color:#808030; ">,</span>mn<span style="color:#800080; ">;</span>
+    <span style="color:#603000; ">map</span><span style="color:#800080; ">&lt;</span><span style="color:#800000; font-weight:bold; ">int</span><span style="color:#808030; ">,</span><span style="color:#603000; ">string</span><span style="color:#800080; ">&gt;</span>sen<span style="color:#800080; ">;</span>
+
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">one</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">2</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">two</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">3</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">three</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">4</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">four</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">5</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">five</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">6</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">six</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">7</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">seven</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">8</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">eight</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">9</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">nine</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">10</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">ten</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">11</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">eleven</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">12</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">twelve</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">13</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">thirteen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">14</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">fourteen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">15</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">quarter</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">16</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">sixteen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">17</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">seventeen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">18</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">eighteen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">19</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">nineteen</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">twenty</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">21</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">22</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">2</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">23</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">3</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">24</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">4</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">25</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">5</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">26</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">6</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">27</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">7</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">28</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">8</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">29</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">20</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">9</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">30</span><span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">half</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    <span style="color:#603000; ">cin</span> <span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&gt;</span> hr <span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&gt;</span> mn<span style="color:#800080; ">;</span>
+    <span style="color:#603000; ">string</span> ans<span style="color:#800080; ">;</span>
+    <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>mn <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+        ans <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span>hr<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> o' clock</span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span>
+    <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>mn <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">30</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+        <span style="color:#603000; ">string</span> tmp1 <span style="color:#808030; ">=</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>mn<span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">1</span> <span style="color:#800080; ">?</span> <span style="color:#800000; ">"</span><span style="color:#800000; ">"</span> <span style="color:#800080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">s</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+        <span style="color:#603000; ">string</span> tmp2 <span style="color:#808030; ">=</span> <span style="color:#808030; ">(</span>mn <span style="color:#808030; ">!</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">30</span> <span style="color:#808030; ">&amp;</span><span style="color:#808030; ">&amp;</span> mn <span style="color:#808030; ">!</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">15</span> <span style="color:#800080; ">?</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> minute</span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> tmp1 <span style="color:#800080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+        ans <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span>mn<span style="color:#808030; ">]</span> <span style="color:#808030; ">+</span> tmp2 <span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> past </span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span>hr<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span>
+    <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>mn <span style="color:#808030; ">&gt;</span> <span style="color:#008c00; ">30</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span>
+        <span style="color:#603000; ">string</span> tmp1 <span style="color:#808030; ">=</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>mn<span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">1</span> <span style="color:#800080; ">?</span> <span style="color:#800000; ">"</span><span style="color:#800000; ">"</span> <span style="color:#800080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; ">s</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+        ans <span style="color:#808030; ">=</span> sen<span style="color:#808030; ">[</span><span style="color:#008c00; ">60</span> <span style="color:#808030; ">-</span> mn<span style="color:#808030; ">]</span><span style="color:#808030; ">+</span> <span style="color:#808030; ">(</span>mn <span style="color:#808030; ">!</span><span style="color:#808030; ">=</span> <span style="color:#008c00; ">45</span> <span style="color:#800080; ">?</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> minute</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">+</span> tmp1 <span style="color:#800080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#808030; ">+</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> to </span><span style="color:#800000; ">"</span> <span style="color:#808030; ">+</span> sen<span style="color:#808030; ">[</span>hr <span style="color:#808030; ">+</span> <span style="color:#008c00; ">1</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+    <span style="color:#800080; ">}</span>
+    <span style="color:#603000; ">cout</span> <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">&lt;</span> ans <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">&lt;</span> <span style="color:#603000; ">endl</span><span style="color:#800080; ">;</span>
+    <span style="color:#800000; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+</pre>
+
+												</code>
+												<h4>Credits:C3</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div style="display: flex; justify-content: space-between">
+							<div class="panel-heading">3.Save The Humanity</div>
+							<p style="margin-right: 10px">Hard | Max Score: 100</p>
+						</div>
+						<div class="panel-body">
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#python3">Python</a></li>
+									<li><a data-toggle="tab" href="#java3">Java</a></li>
+									<li><a data-toggle="tab" href="#c3">C</a></li>
+									<li><a data-toggle="tab" href="#cplusplus3">C++</a></li>
+								</ul>
+								<div class="tab-content" style=" margin-top: 20px;text-align: start">
+									<div id="python3" class="tab-pane fade in active">
+										<code>
+											print("Hello World")
+										</code>
+									</div>
+									<div id="java3" class="tab-pane fade">
+										<code>
+											<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>io</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>util</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>text</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>math</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> java</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>util</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>regex</span><span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>*</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> Solution 
+<span style='color:#800080; '>{</span>
+    <span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>static</span> <span style='color:#bb7977; '>void</span> main <span style='color:#808030; '>(</span><span style='color:#bb7977; font-weight:bold; '>String</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span> args<span style='color:#808030; '>)</span> <span style='color:#800000; font-weight:bold; '>throws</span> <span style='color:#bb7977; font-weight:bold; '>Exception</span> 
+    <span style='color:#800080; '>{</span>
+        <span style='color:#bb7977; font-weight:bold; '>Scanner</span> bt  <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>new</span> <span style='color:#bb7977; font-weight:bold; '>Scanner</span> <span style='color:#808030; '>(</span> <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>in <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#bb7977; '>int</span> t <span style='color:#808030; '>=</span> bt<span style='color:#808030; '>.</span>nextInt<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>t<span style='color:#808030; '>-</span><span style='color:#808030; '>-</span> <span style='color:#808030; '>></span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span>
+        <span style='color:#800080; '>{</span>
+            <span style='color:#bb7977; font-weight:bold; '>String</span> pa <span style='color:#808030; '>=</span> bt<span style='color:#808030; '>.</span>next<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#bb7977; font-weight:bold; '>String</span> virus <span style='color:#808030; '>=</span> bt<span style='color:#808030; '>.</span>next<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#bb7977; font-weight:bold; '>String</span> subs<span style='color:#800080; '>;</span>
+            <span style='color:#bb7977; '>boolean</span> v <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>false</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#bb7977; '>int</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>=</span> <span style='color:#808030; '>(</span>pa<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>-</span> virus<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span> i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span> <span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                subs <span style='color:#808030; '>=</span> pa<span style='color:#808030; '>.</span>substring<span style='color:#808030; '>(</span> i<span style='color:#808030; '>,</span>i<span style='color:#808030; '>+</span>virus<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+                <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span> subs<span style='color:#808030; '>.</span>equals<span style='color:#808030; '>(</span>virus<span style='color:#808030; '>)</span> <span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span> <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>print<span style='color:#808030; '>(</span>i<span style='color:#808030; '>+</span><span style='color:#0000e6; '>" "</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>v <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>true</span><span style='color:#800080; '>;</span> <span style='color:#800080; '>}</span>
+                <span style='color:#800000; font-weight:bold; '>else</span> <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span> butOne<span style='color:#808030; '>(</span>subs<span style='color:#808030; '>,</span>virus<span style='color:#808030; '>)</span> <span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span> <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>print<span style='color:#808030; '>(</span>i<span style='color:#808030; '>+</span><span style='color:#0000e6; '>" "</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>v <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>true</span><span style='color:#800080; '>;</span> <span style='color:#800080; '>}</span>
+            <span style='color:#800080; '>}</span>
+            <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span><span style='color:#808030; '>!</span>v<span style='color:#808030; '>)</span> <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"No Match!"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000; font-weight:bold; '>else</span> <span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#800080; '>}</span>   
+    <span style='color:#800080; '>}</span>
+    <span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>static</span> <span style='color:#bb7977; '>boolean</span> butOne <span style='color:#808030; '>(</span> <span style='color:#bb7977; font-weight:bold; '>String</span> s<span style='color:#808030; '>,</span> <span style='color:#bb7977; font-weight:bold; '>String</span> p <span style='color:#808030; '>)</span>
+    <span style='color:#800080; '>{</span>
+        <span style='color:#bb7977; '>int</span> i<span style='color:#808030; '>,</span>c<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> <span style='color:#808030; '>(</span>c <span style='color:#808030; '>!</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>2</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>&amp;</span><span style='color:#808030; '>&amp;</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>&lt;</span> s<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>;</span> i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span> <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span> s<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>i<span style='color:#808030; '>)</span> <span style='color:#808030; '>!</span><span style='color:#808030; '>=</span> p<span style='color:#808030; '>.</span>charAt<span style='color:#808030; '>(</span>i<span style='color:#808030; '>)</span> <span style='color:#808030; '>)</span> c<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span> c <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span> <span style='color:#808030; '>|</span><span style='color:#808030; '>|</span> c<span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span> <span style='color:#808030; '>)</span> <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#800000; font-weight:bold; '>true</span><span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>else</span> <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#800000; font-weight:bold; '>false</span><span style='color:#800080; '>;</span>    
+    <span style='color:#800080; '>}</span>    
+<span style='color:#800080; '>}</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 17:19:11 UTC -->
+										</code><h4>Credits:C3</h4>
+									</div>
+									<div id="c3" class="tab-pane fade">
+										<code>
+											<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>string.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>math.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdlib.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+    <span style='color:#800000; font-weight:bold; '>int</span> t<span style='color:#808030; '>,</span>i<span style='color:#808030; '>,</span>j<span style='color:#808030; '>,</span>len<span style='color:#808030; '>,</span>l<span style='color:#808030; '>,</span>flag<span style='color:#800080; '>;</span>
+    <span style='color:#800000; font-weight:bold; '>char</span> p<span style='color:#808030; '>[</span><span style='color:#008c00; '>1000001</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span>v<span style='color:#808030; '>[</span><span style='color:#008c00; '>1000001</span><span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>t<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>t<span style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span style='color:#808030; '>)</span>
+    <span style='color:#800080; '>{</span>
+        <span style='color:#800000; font-weight:bold; '>int</span> t<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+        <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%s</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>p<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span><span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%s</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>v<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        len <span style='color:#808030; '>=</span> <span style='color:#603000; '>strlen</span><span style='color:#808030; '>(</span>p<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>l <span style='color:#808030; '>=</span> <span style='color:#603000; '>strlen</span><span style='color:#808030; '>(</span>v<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        
+        <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>=</span><span style='color:#808030; '>(</span>len<span style='color:#808030; '>-</span>l<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+        <span style='color:#800080; '>{</span>
+            flag<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>j<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>j<span style='color:#808030; '>&lt;</span>l<span style='color:#800080; '>;</span>j<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+                <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>p<span style='color:#808030; '>[</span>i<span style='color:#808030; '>+</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span>v<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span>
+                   flag<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#800080; '>;</span>
+                
+            <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span><span style='color:#808030; '>(</span>flag<span style='color:#808030; '>=</span><span style='color:#808030; '>=</span>l<span style='color:#808030; '>)</span><span style='color:#808030; '>|</span><span style='color:#808030; '>|</span><span style='color:#808030; '>(</span>flag<span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>(</span>l<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                t<span style='color:#808030; '>=</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span><span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>i<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span>   
+        <span style='color:#800080; '>}</span>
+        <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span><span style='color:#808030; '>!</span>t<span style='color:#808030; '>)</span> <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>No Match!</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+        <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#800080; '>}</span>    
+    <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 17:14:04 UTC -->
+										</code>
+										<h4>Credits:C3</h4>
+									</div>
+									<div id="cplusplus3" class="tab-pane fade">
+										<code>
+											<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>iostream</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>fstream</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdlib.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>string</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>algorithm</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>cmath</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>set</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>queue</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stack</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>iomanip</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>vector</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>map</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>using</span> <span style='color:#800000; font-weight:bold; '>namespace</span> <span style='color:#666616; '>std</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> a<span style='color:#808030; '>[</span><span style='color:#008c00; '>100005</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span>i<span style='color:#808030; '>,</span>m<span style='color:#808030; '>,</span>ans<span style='color:#808030; '>,</span>k<span style='color:#808030; '>,</span>l<span style='color:#808030; '>,</span>j<span style='color:#808030; '>,</span>q<span style='color:#808030; '>,</span>x<span style='color:#808030; '>,</span>n<span style='color:#808030; '>,</span>ma<span style='color:#808030; '>,</span>mi<span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>char</span> c<span style='color:#808030; '>[</span><span style='color:#008c00; '>100005</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span>s2<span style='color:#808030; '>[</span><span style='color:#008c00; '>100005</span><span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>string</span> s<span style='color:#808030; '>,</span>s1<span style='color:#800080; '>;</span>
+<span style='color:#603000; '>vector</span><span style='color:#800080; '>&lt;</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#800080; '>></span> zf <span style='color:#808030; '>(</span><span style='color:#603000; '>string</span> s<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+	<span style='color:#800000; font-weight:bold; '>int</span> n <span style='color:#808030; '>=</span> <span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#808030; '>)</span> s<span style='color:#808030; '>.</span>length<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#603000; '>vector</span><span style='color:#800080; '>&lt;</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#800080; '>></span> z <span style='color:#808030; '>(</span>n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#800000; font-weight:bold; '>for</span> <span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> i<span style='color:#808030; '>=</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>,</span> l<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#808030; '>,</span> r<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i<span style='color:#808030; '>&lt;</span>n<span style='color:#800080; '>;</span> <span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>i<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>=</span> r<span style='color:#808030; '>)</span>
+			z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#603000; '>min</span> <span style='color:#808030; '>(</span>r<span style='color:#808030; '>-</span>i<span style='color:#808030; '>+</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>,</span> z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>-</span>l<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+		<span style='color:#800000; font-weight:bold; '>while</span> <span style='color:#808030; '>(</span>i<span style='color:#808030; '>+</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span> <span style='color:#808030; '>&lt;</span> n <span style='color:#808030; '>&amp;</span><span style='color:#808030; '>&amp;</span> s<span style='color:#808030; '>[</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> s<span style='color:#808030; '>[</span>i<span style='color:#808030; '>+</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>]</span><span style='color:#808030; '>)</span>
+			<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+		<span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#808030; '>(</span>i<span style='color:#808030; '>+</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span> <span style='color:#808030; '>></span> r<span style='color:#808030; '>)</span>
+			l <span style='color:#808030; '>=</span> i<span style='color:#808030; '>,</span>  r <span style='color:#808030; '>=</span> i<span style='color:#808030; '>+</span>z<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>
+	<span style='color:#800080; '>}</span>
+	<span style='color:#800000; font-weight:bold; '>return</span> z<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+<span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+          <span style='color:#603000; '>cin</span><span style='color:#808030; '>></span><span style='color:#808030; '>></span>n<span style='color:#800080; '>;</span>
+
+        <span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>n<span style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span style='color:#808030; '>)</span>
+        <span style='color:#800080; '>{</span>
+            <span style='color:#603000; '>cin</span><span style='color:#808030; '>></span><span style='color:#808030; '>></span>s<span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>cin</span><span style='color:#808030; '>></span><span style='color:#808030; '>></span>s1<span style='color:#800080; '>;</span>
+
+            <span style='color:#603000; '>vector</span><span style='color:#800080; '>&lt;</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#800080; '>></span> p1<span style='color:#808030; '>=</span>zf<span style='color:#808030; '>(</span>s1<span style='color:#808030; '>+</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>$</span><span style='color:#800000; '>"</span><span style='color:#808030; '>+</span>s<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>string</span> S<span style='color:#808030; '>=</span>s<span style='color:#808030; '>,</span>S1<span style='color:#808030; '>=</span>s1<span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>reverse</span><span style='color:#808030; '>(</span>S1<span style='color:#808030; '>.</span>begin<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>,</span>S1<span style='color:#808030; '>.</span>end<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>reverse</span><span style='color:#808030; '>(</span>S<span style='color:#808030; '>.</span>begin<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>,</span>S<span style='color:#808030; '>.</span>end<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>vector</span><span style='color:#800080; '>&lt;</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#800080; '>></span> p2<span style='color:#808030; '>=</span>zf<span style='color:#808030; '>(</span>S1<span style='color:#808030; '>+</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>$</span><span style='color:#800000; '>"</span><span style='color:#808030; '>+</span>S<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#603000; '>reverse</span><span style='color:#808030; '>(</span>p2<span style='color:#808030; '>.</span>begin<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>,</span>p2<span style='color:#808030; '>.</span>end<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+
+            <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> i<span style='color:#808030; '>=</span>s1<span style='color:#808030; '>.</span>size<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>+</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>p1<span style='color:#808030; '>.</span>size<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>p1<span style='color:#808030; '>[</span>i<span style='color:#808030; '>-</span>s1<span style='color:#808030; '>.</span>size<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>=</span>p1<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+
+            k<span style='color:#808030; '>=</span>s1<span style='color:#808030; '>.</span>size<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+            <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>s<span style='color:#808030; '>.</span>size<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>-</span>k<span style='color:#808030; '>+</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+            <span style='color:#800080; '>{</span>
+                <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>p1<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>+</span>p2<span style='color:#808030; '>[</span>i<span style='color:#808030; '>+</span>k<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>></span><span style='color:#808030; '>=</span>k<span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#603000; '>cout</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span>i<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span>
+                <span style='color:#603000; '>cout</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>endl</span><span style='color:#800080; '>;</span>
+        <span style='color:#800080; '>}</span>
+
+
+<span style='color:#800080; '>}</span>
+</pre>
+<!--Created using ToHtml.com on 2019-07-28 17:16:50 UTC -->
+										</code><h4>Credits:C3</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-4">
+					<div class="footer-widget mb-30">
+						<!-- Logo -->
+						<a href="../index.html" class="foo-logo d-block mb-4 text-center"><img
+								src="../img/core-img/logo2.png" alt="" /></a>
+						<p>
+							Creating a technical atmosphere amongst the student. Enhancing
+							student’s analytical and technical thinking. Making students
+							industry ready by keeping them up-to-date with industry standard
+							technologies.
+						</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-3 offset-xl-1">
+					<div class="footer-widget mb-30">
+						<h6 class="widget-title">Reach Us</h6>
+
+						<!-- Single Blog Post -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6598743524723!2d72.82654491438136!3d19.38387464726096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aec0a4b41bef%3A0xbd1a4ca919d6a613!2sVidyavardhini&#39;s+College+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1552972733009"
+							width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+						<!-- Single Blog Post -->
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-sm-6 col-xl-3 offset-xl-1">
+					<div class="footer-widget mb-30">
+						<h6 class="widget-title">Our Aim</h6>
+						<!-- Contact Address -->
+						<div class="contact-address">
+							<p>
+								C3 is a peer to peer learning group, which focuses on teaching
+								and learning various skills and sharing expertise among the
+								students for a cumulative growth of the community
+							</p>
+						</div>
+						<!-- Footer Social Area -->
+						<div class="footer-social-area">
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copywrite Area -->
+		<div class="copywrite-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- Copywrite Text -->
+					<div class="col-12 col-sm-6">
+						<p class="copywrite-text">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved
+							<i class="fa fa-heart-o" aria-hidden="true"></i> by
+							<a href="" target="_blank">Core Coding Committee</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+					<div class="col-12 col-sm-6">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="django/blog/blog-grid.html">Subject</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script src="../js/jquery/jquery-2.2.4.min.js"></script>
+	<!-- Popper js -->
+	<script src="../js/bootstrap/popper.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+	<!-- All Plugins js -->
+	<script src="../js/plugins/plugins.js"></script>
+	<!-- Active js -->
+	<script src="../js/active.js"></script>
+
+</body>
+
+</html>
